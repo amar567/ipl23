@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2023</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/collapsable.css">
+
+    <script src="./js/main.js"></script>
+
+    <!-- external  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <div>
+        <!--Slider-->
+        <div id="slider">
+            <div class="slide" style="background:dodgerBlue;">
+                <img src="https://img.fotocommunity.com/peacefull-95e65145-d050-4957-9ddc-85dd60689d45.jpg?height=500">
+            </div>
+
+            <div class="slide" style="background:coral;">
+                <img
+                    src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/sunset-storm-haystack-rock-canon-beach-oregon-coast-tl-mair.jpg">
+            </div>
+
+            <div class="slide" style="background:crimson;">
+                <img
+                    src=" https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/1-tourists-at-eiffel-tower-paris-panoramic-images.jpg">
+            </div>
+
+            <div class="slide" style="background: #6edf10;">
+                <img src="https://dmasia.travel/wp-content/uploads/2019/09/vit3-1000x350.jpg">
+            </div>
+
+            <!--Controlling arrows-->
+            <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left"
+                    aria-hidden="true"></i>
+            </span>
+            <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
+                    aria-hidden="true"></i>
+            </span>
+        </div>
+        <div id="dots-con">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+
+        <div class="slider_container sticky">
+            <div id="tabs" class="tabs slider">
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="tab whiteborder">Overview</div>
+                <div class="tab">Schedule</div>
+                <div class="tab">Table</div>
+                <div class="tab">Stats</div>
+                <div class="tab">Teams</div>
+                <div class="tab">Past&nbspMatches</div>
+                <div class="tab">News</div>
+            </div>
+        </div>
+
+        <div class="tabs tabs_container">
+
+            <div class="tabContent">
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 2
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        today
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        tommorow
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+            </div>
+            <!-- render only limited part and give a load more button -->
+            <div class="tabContent">
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 3
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 4
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <br>
+                <button disabled="disabled">Load</button>
+            </div>
+            <div class="tabContent">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Team</th>
+                            <th>Something_Else</th>
+                            <th>Played</th>
+                            <th>Won</th>
+                            <th>Lost</th>
+                            <th>Tied</th>
+                            <th>Points</th>
+                        </tr>
+                        <tr>
+                            <td>Team 1</td>
+                            <td></td> <!-- blank -->
+                            <td>H13</td>
+                            <td>H14</td>
+                            <td>H15</td>
+                            <td>H16</td>
+                            <td>H17</td>
+                        </tr>
+                        <tr>
+                            <td>Tea</td <!-- blank -->>
+                            <td></td> <!-- blank -->
+                            <td>H23</td>
+                            <td>H24</td>
+                            <td>H25</td>
+                            <td>H26</td>
+                            <td>H27</td>
+                        </tr>
+                        <tr>
+                            <td>Team 3</td>
+                            <td></td> <!-- blank -->
+                            <td>H33</td>
+                            <td>H34</td>
+                            <td>H35</td>
+                            <td>H36</td>
+                            <td>H37</td>
+                        </tr>
+                        <tr>
+                            <td>Team 4</td>
+                            <td></td> <!-- blank -->
+                            <td>H44</td>
+                            <td>H44</td>
+                            <td>H45</td>
+                            <td>H46</td>
+                            <td>H47</td>
+                        </tr>
+                        <tr>
+                            <td>Team 5</td>
+                            <td></td> <!-- blank -->
+                            <td>H54</td>
+                            <td>H54</td>
+                            <td>H55</td>
+                            <td>H56</td>
+                            <td>H57</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tabContent stat_card_container">
+                <div
+                    style="display: flex;flex-direction: column;align-items: center;justify-content: space-between;box-shadow: 0px 0px 5px 0px black;width: fit-content;border-radius: 20px;margin-top: 20px;">
+                    <div
+                        style="border-radius: 20px 20px 0 0;display:flex;height: 80vw;width: 90vw;background-color: blue;    align-items: flex-end;justify-content: center">
+                        <div style="width: 70vw;">
+                            <img src="./assets/players/jos_buttler.png" alt="" style="">
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex;flex-direction: column;align-items: center;text-align: center;padding: 10px;">
+                        <div>
+                            <h2>
+                                jos buttler
+                            </h2>
+                            <h1>
+                                689
+                            </h1>
+                            <h3>
+                                Runs
+                            </h3>
+                        </div>
+                        <button disabled="disabled">
+                            View Full List
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex;flex-direction: column;align-items: center;justify-content: space-between;box-shadow: 0px 0px 5px 0px black;width: fit-content;border-radius: 20px;margin-top: 20px;">
+                    <div
+                        style="border-radius: 20px 20px 0 0;display:flex;height: 80vw;width: 90vw;background-color: blue;    align-items: flex-end;justify-content: center">
+                        <div style="width: 70vw;">
+                            <img src="./assets/players/jos_buttler.png" alt="" style="">
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex;flex-direction: column;align-items: center;text-align: center;padding: 10px;">
+                        <div>
+                            <h2>
+                                jos buttler
+                            </h2>
+                            <h1>
+                                689
+                            </h1>
+                            <h3>
+                                Runs
+                            </h3>
+                        </div>
+                        <button disabled="disabled">
+                            View Full List
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex;flex-direction: column;align-items: center;justify-content: space-between;box-shadow: 0px 0px 5px 0px black;width: fit-content;border-radius: 20px;margin-top: 20px;">
+                    <div
+                        style="border-radius: 20px 20px 0 0;display:flex;height: 80vw;width: 90vw;background-color: blue;    align-items: flex-end;justify-content: center">
+                        <div style="width: 70vw;">
+                            <img src="./assets/players/jos_buttler.png" alt="" style="">
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex;flex-direction: column;align-items: center;text-align: center;padding: 10px;">
+                        <div>
+                            <h2>
+                                jos buttler
+                            </h2>
+                            <h1>
+                                689
+                            </h1>
+                            <h3>
+                                Runs
+                            </h3>
+                        </div>
+                        <button disabled="disabled">
+                            View Full List
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex;flex-direction: column;align-items: center;justify-content: space-between;box-shadow: 0px 0px 5px 0px black;width: fit-content;border-radius: 20px;margin-top: 20px;">
+                    <div
+                        style="border-radius: 20px 20px 0 0;display:flex;height: 80vw;width: 90vw;background-color: blue;    align-items: flex-end;justify-content: center">
+                        <div style="width: 70vw;">
+                            <img src="./assets/players/jos_buttler.png" alt="" style="">
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex;flex-direction: column;align-items: center;text-align: center;padding: 10px;">
+                        <div>
+                            <h2>
+                                jos buttler
+                            </h2>
+                            <h1>
+                                689
+                            </h1>
+                            <h3>
+                                Runs
+                            </h3>
+                        </div>
+                        <button disabled="disabled">
+                            View Full List
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex;flex-direction: column;align-items: center;justify-content: space-between;box-shadow: 0px 0px 5px 0px black;width: fit-content;border-radius: 20px;margin-top: 20px;">
+                    <div
+                        style="border-radius: 20px 20px 0 0;display:flex;height: 80vw;width: 90vw;background-color: blue;    align-items: flex-end;justify-content: center">
+                        <div style="width: 70vw;">
+                            <img src="./assets/players/jos_buttler.png" alt="" style="">
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex;flex-direction: column;align-items: center;text-align: center;padding: 10px;">
+                        <div>
+                            <h2>
+                                jos buttler
+                            </h2>
+                            <h1>
+                                689
+                            </h1>
+                            <h3>
+                                Runs
+                            </h3>
+                        </div>
+                        <button disabled="disabled">
+                            View Full List
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabContent">
+
+                <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10px;">
+                    <button class="collapsible-header"
+                        style="background: linear-gradient(90deg, #4568DC 0%, #B06AB3 100%); padding: 20px;border-radius: 20px;width: 90vw;">
+                        <div style="display: flex;    justify-content: space-around;align-items: center;">
+                            <div class="medium_logo">
+                                <img src="./assets/team_logos/logo.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <div>
+                                    <p style="line-height: 0;font-size: larger;font-weight: 600;">F C Barcelona</p>
+                                </div>
+                                <div style="display: flex;
+                                justify-content: space-around;">
+                                    <div>
+                                        p
+                                        <br>
+                                        4
+                                    </div>
+                                    <br>
+                                    <div>
+                                        w
+                                        <br>
+                                        2
+                                    </div>
+                                    <br>
+                                    <div>
+                                        l
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        d
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        pts
+                                        <br>
+                                        92
+                                    </div>
+                                </div>
+                                <div style="width: 100%;text-align: center;font-size: x-large;">
+                                    ⌄
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div>
+                        <div class="collapsible-content">
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display: flex;flex-direction: row-reverse;align-items: center;justify-content: space-between;width: 80vw;margin-top: 10px;background: linear-gradient(90deg, #222232 0%, #1E1E2C 100%);border-radius: 20px;padding: 8px;">
+                                <div style="width: 30vw;">
+                                    <img src="./assets/players/jos_buttler.png" alt="">
+                                </div>
+                                <div style="display: flex;flex-direction: column;width: 45vw;">
+                                    <div>Name Title</div>
+                                    <div style="height: 5px;"></div>
+                                    <div>Role</div>
+                                    <div style="height: 5px;"></div>
+                                    <div style="display: flex;font-size: smaller;    justify-content: space-between;">
+                                        <div>
+                                            Inng
+                                            <br>
+                                            4
+                                        </div>
+                                        <div>
+                                            Runs
+                                            <br>
+                                            92
+                                        </div>
+                                        <div>
+                                            Wkt
+                                            <br>
+                                            3
+                                        </div>
+                                        <div>
+                                            Avg
+                                            <br>
+                                            23
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10px;">
+                    <button class="collapsible-header"
+                        style="background: linear-gradient(90deg, #4568DC 0%, #B06AB3 100%); padding: 20px;border-radius: 20px;width: 90vw;">
+                        <div style="display: flex;    justify-content: space-around;align-items: center;">
+                            <div class="medium_logo">
+                                <img src="./assets/team_logos/logo.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <div>
+                                    <p style="line-height: 0;font-size: larger;font-weight: 600;">F C Barcelona</p>
+                                </div>
+                                <div style="display: flex;
+                                justify-content: space-around;">
+                                    <div>
+                                        p
+                                        <br>
+                                        4
+                                    </div>
+                                    <br>
+                                    <div>
+                                        w
+                                        <br>
+                                        2
+                                    </div>
+                                    <br>
+                                    <div>
+                                        l
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        d
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        pts
+                                        <br>
+                                        92
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div>
+                        <div class="collapsible-content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa veniam ducimus nihil quasi
+                            ipsam? Velit dolores, ratione illum, repellat, reprehenderit similique eum rem nulla
+                            voluptate
+                            at odit. Nobis, illo porro?
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate quasi ea, soluta
+                            perferendis magnam? Quaerat quia odit amet ipsa quo assumenda eum officiis laudantium sed.
+                            Laborum, repellendus mollitia? Sint.
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10px;">
+                    <button class="collapsible-header"
+                        style="background: linear-gradient(90deg, #4568DC 0%, #B06AB3 100%); padding: 20px;border-radius: 20px;width: 90vw;">
+                        <div style="display: flex;    justify-content: space-around;align-items: center;">
+                            <div class="medium_logo">
+                                <img src="./assets/team_logos/logo.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <div>
+                                    <p style="line-height: 0;font-size: larger;font-weight: 600;">F C Barcelona</p>
+                                </div>
+                                <div style="display: flex;
+                                justify-content: space-around;">
+                                    <div>
+                                        p
+                                        <br>
+                                        4
+                                    </div>
+                                    <br>
+                                    <div>
+                                        w
+                                        <br>
+                                        2
+                                    </div>
+                                    <br>
+                                    <div>
+                                        l
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        d
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        pts
+                                        <br>
+                                        92
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div>
+                        <div class="collapsible-content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa veniam ducimus nihil quasi
+                            ipsam? Velit dolores, ratione illum, repellat, reprehenderit similique eum rem nulla
+                            voluptate
+                            at odit. Nobis, illo porro?
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate quasi ea, soluta
+                            perferendis magnam? Quaerat quia odit amet ipsa quo assumenda eum officiis laudantium sed.
+                            Laborum, repellendus mollitia? Sint.
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10px;">
+                    <button class="collapsible-header"
+                        style="background: linear-gradient(90deg, #4568DC 0%, #B06AB3 100%); padding: 20px;border-radius: 20px;width: 90vw;">
+                        <div style="display: flex;    justify-content: space-around;align-items: center;">
+                            <div class="medium_logo">
+                                <img src="./assets/team_logos/logo.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <div>
+                                    <p style="line-height: 0;font-size: larger;font-weight: 600;">F C Barcelona</p>
+                                </div>
+                                <div style="display: flex;
+                                justify-content: space-around;">
+                                    <div>
+                                        p
+                                        <br>
+                                        4
+                                    </div>
+                                    <br>
+                                    <div>
+                                        w
+                                        <br>
+                                        2
+                                    </div>
+                                    <br>
+                                    <div>
+                                        l
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        d
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        pts
+                                        <br>
+                                        92
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div>
+                        <div class="collapsible-content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa veniam ducimus nihil quasi
+                            ipsam? Velit dolores, ratione illum, repellat, reprehenderit similique eum rem nulla
+                            voluptate
+                            at odit. Nobis, illo porro?
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate quasi ea, soluta
+                            perferendis magnam? Quaerat quia odit amet ipsa quo assumenda eum officiis laudantium sed.
+                            Laborum, repellendus mollitia? Sint.
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex;flex-direction: column;align-items: center;margin-top: 10px;">
+                    <button class="collapsible-header"
+                        style="background: linear-gradient(90deg, #4568DC 0%, #B06AB3 100%); padding: 20px;border-radius: 20px;width: 90vw;">
+                        <div style="display: flex;    justify-content: space-around;align-items: center;">
+                            <div class="medium_logo">
+                                <img src="./assets/team_logos/logo.png" alt="">
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <div>
+                                    <p style="line-height: 0;font-size: larger;font-weight: 600;">F C Barcelona</p>
+                                </div>
+                                <div style="display: flex;
+                                justify-content: space-around;">
+                                    <div>
+                                        p
+                                        <br>
+                                        4
+                                    </div>
+                                    <br>
+                                    <div>
+                                        w
+                                        <br>
+                                        2
+                                    </div>
+                                    <br>
+                                    <div>
+                                        l
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        d
+                                        <br>
+                                        1
+                                    </div>
+                                    <br>
+                                    <div>
+                                        pts
+                                        <br>
+                                        92
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div>
+                        <div class="collapsible-content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa veniam ducimus nihil quasi
+                            ipsam? Velit dolores, ratione illum, repellat, reprehenderit similique eum rem nulla
+                            voluptate
+                            at odit. Nobis, illo porro?
+                            <br>
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate quasi ea, soluta
+                            perferendis magnam? Quaerat quia odit amet ipsa quo assumenda eum officiis laudantium sed.
+                            Laborum, repellendus mollitia? Sint.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- render only limited part and give a load more button -->
+            <div class="tabContent">
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 3
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 4
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <div class="match_card">
+                    <div class="match_card_teams">
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                        <br>
+                        <div class="team_name_line">
+                            <img class="small_logo" src="./assets/team_logos/logo.png" alt="">
+                            &nbsp; name of team 1
+                        </div>
+                    </div>
+                    <div class="match_card_date">
+                        day, 01 mth
+                        <br>
+                        12:00 pm
+                    </div>
+                </div>
+                <br>
+                <button disabled="disabled">Load</button>
+            </div>
+            <div class="tabContent">7</div>
+        </div>
+
+    </div>
+
+    <br>
+
+    <!-- spons -->
+    <div style="text-align: center;">
+        <h1>Our Sponsors</h1>
+        <div style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;">
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+            
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+            <div>
+                <img src="./assets/team_logos/logo.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- footer -->
+
+    
+
+    <script src="./js/tabs.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/collapsable.js"></script>
+
+</body>
+
+</html>

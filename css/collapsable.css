@@ -1,0 +1,53 @@
+:root {
+    --collapsible-transition-fn: ease;
+    --collapsible-transition-duration: 0.3s;
+    --collapsible-padding: 0.6rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p :last-of-type {
+    margin-bottom: initial;
+  }
+
+  .collapsible-header {
+    appearance: none;
+    width: 100%;
+    border: none;
+    padding: var(--collapsible-padding);
+    display: block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: initial;
+    position: relative;
+    background-color: #ff000000;
+    color: white;
+  }
+/*   
+  .collapsible-header::after {
+    content: "►";
+    position: absolute;
+    right: 2%;
+    transition: transform var(--collapsible-transition-duration)
+      var(--collapsible-transition-fn);
+  } */
+  
+  .collapsible-header:has(+ .active)::after {
+    transform: rotate(90deg);
+  }
+  
+  .collapsible-header + * {
+    max-height: 0;
+    margin-bottom: 0.2rem;
+    overflow-y: hidden;
+    will-change: max-height;
+    transition: max-height var(--collapsible-transition-duration)
+      var(--collapsible-transition-fn);
+  }
+  
+  .collapsible-content {
+    padding: var(--collapsible-padding);
+  }
+  
